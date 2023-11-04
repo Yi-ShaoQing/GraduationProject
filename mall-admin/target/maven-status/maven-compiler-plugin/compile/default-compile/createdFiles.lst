@@ -1,0 +1,8 @@
+com\ysq\controller\AdminLoginController.class
+com\ysq\controller\UploadController.class
+com\ysq\filter\JwtAuthenticationTokenFilter.class
+com\ysq\config\SecurityConfig.class
+com\ysq\controller\BrandController.class
+com\ysq\controller\GoodsCategoryContolrler.class
+com\ysq\controller\GoodsController.class
+com\ysq\MallAdminApplication.class

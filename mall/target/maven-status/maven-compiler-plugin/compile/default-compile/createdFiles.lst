@@ -1,0 +1,8 @@
+com\ysq\controller\UserController.class
+com\ysq\filter\JwtAuthenticationTokenFilter.class
+com\ysq\config\SecurityConfig.class
+com\ysq\controller\CartController.class
+com\ysq\controller\GoodsCategoryContolrler.class
+com\ysq\controller\GoodsController.class
+com\ysq\controller\MallLoginController.class
+com\ysq\MallApplication.class

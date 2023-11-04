@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ysq.mapper.SysOrderMapper">
+    <select id="getLineChart" resultType="com.ysq.domain.entity.Chart">
+        SELECT SUM(`total_price`) AS sum_price ,MONTH(`order_time`) AS MONTH
+        FROM `sys_order` WHERE YEAR(`order_time`) = YEAR(CURDATE()) GROUP BY MONTH(`order_time`)
+                                                                    ORDER BY MONTH(`order_time`) ASC
+    </select>
+
+    <select id="getDailySales" resultType="java.lang.Double">
+        SELECT SUM(`total_price`) AS sum_price
+        FROM `sys_order` WHERE date(`order_time`)= date(now())
+    </select>
+</mapper>
+
